@@ -2789,13 +2789,11 @@ Your current mental stack:
 
 We insert AIS here:
 
-```text id="h6v9rx"
 User → FastAPI → (AIS Controller Layer) → LLM / DB / Tools
                           ↓
                    AIS Event Stream
                           ↓
                 Live Dashboard (React)
-```
 
 So AIS is NOT another app.
 
@@ -2991,9 +2989,7 @@ It becomes:
 
 Later upgrade:
 
-```text id="r2m7pq"
 AIS event → write_async → Postgres table (ais_events)
-```
 
 Table:
 
@@ -3931,9 +3927,8 @@ Let’s rewrite your full ontology properly:
 
 ## I. Newtonian layer (material constraints)
 
-```text id="x8v3ka"
 Capital → Labor → Commodity → Service
-```
+
 
 This is:
 
@@ -3946,9 +3941,7 @@ This is:
 
 ## II. Informational layer (relativistic constraints)
 
-```text id="m2l9qz"
 Information → Interpretation → Prediction → Decision
-```
 
 This is:
 
@@ -3961,9 +3954,7 @@ This is:
 
 ## III. AIS layer (meta-physical control system)
 
-```text id="c7n1vd"
 State (θₜ) → Update Rule → θₜ₊₁
-```
 
 This is:
 
@@ -4052,9 +4043,7 @@ Let’s clean your section:
 
 So:
 
-```text id="r4v0mz"
 Information → AIS → metric update → decision space deformation → action
-```
 
 ---
 
@@ -4258,7 +4247,7 @@ Noted. No HTML artifacts. Full repo it is.
 
 ## VII
 
-Artefact URL: https://ukb-ais.onrender.com
+Artefact [URL](https://ukb-ais.onrender.com) 
 
 Noted. No HTML artifacts. Full repo it is.Now the render.yaml — the critical piece:Backend confirmed. Copy everything to outputs:17 files, full repo. Push to GitHub and Render picks up `render.yaml` as a Blueprint automatically.
 
