@@ -4259,3 +4259,21 @@ Noted. No HTML artifacts. Full repo it is.
 ## VII
 
 Artefact URL: https://ukb-ais.onrender.com
+
+Noted. No HTML artifacts. Full repo it is.Now the render.yaml — the critical piece:Backend confirmed. Copy everything to outputs:17 files, full repo. Push to GitHub and Render picks up `render.yaml` as a Blueprint automatically.
+
+**One thing you must do before deploy:** update the WebSocket URL in `frontend/src/hooks/useAISStream.js` — the `PROD` branch needs your actual `ais-system` Render URL:
+
+```js
+const WS_URL = import.meta.env.PROD
+  ? 'wss://ais-system.onrender.com/stream'  // ← your real backend URL
+  : 'ws://localhost:8000/stream'
+```
+
+**What the dashboard shows:**
+- Live drift chart with HARD/SOFT thresholds marked — watch it stabilise over ~80 steps by design
+- θ state snapshot with vector bars and eigenmodes (the five TMVES-aligned priors)
+- FAST/SOFT/HARD controller distribution bars
+- Event log streaming every second, most recent on top
+- **Dorian Gray detector** — flashes `⚠ DORIAN GRAY` if contradiction rate exceeds 30% while drift is low (corruption that looks like stability)
+- Ukubona house aesthetic throughout: Cormorant Garamond / DM Sans / DM Mono, dark ground, ROYGBIV spectrum strip
