@@ -4247,7 +4247,7 @@ Noted. No HTML artifacts. Full repo it is.
 
 ## VII
 
-Artefact [URL](https://ukb-ais.onrender.com) 
+Artefact [URL](https://ukb-ais-ui.onrender.com) 
 
 Noted. No HTML artifacts. Full repo it is.Now the render.yaml — the critical piece:Backend confirmed. Copy everything to outputs:17 files, full repo. Push to GitHub and Render picks up `render.yaml` as a Blueprint automatically.
 
@@ -4255,7 +4255,7 @@ Noted. No HTML artifacts. Full repo it is.Now the render.yaml — the critical p
 
 ```js
 const WS_URL = import.meta.env.PROD
-  ? 'wss://ais-system.onrender.com/stream'  // ← your real backend URL
+  ? 'wss://ukb-ais-api.onrender.com/stream'  // ← your real backend URL
   : 'ws://localhost:8000/stream'
 ```
 
