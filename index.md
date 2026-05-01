@@ -34,7 +34,7 @@ This is not just media embedding.
 
 In your architecture, this becomes:
 
-```text id="a1v8pz"
+
 Information Input (Video)
         ↓
 Interpretation Layer (LLM / AIS)
@@ -42,7 +42,7 @@ Interpretation Layer (LLM / AIS)
 State Update θₜ → θₜ₊₁
         ↓
 Dashboard Visualization
-```
+ 
 
 So this video is effectively:
 
@@ -70,9 +70,9 @@ So this iframe is literally:
 
 You can treat any embed (YouTube, sensors, docs) as:
 
-```text id="z3kq9m"
+ 
 External Reality → Tensor Injection → AIS State Evolution
-```
+ 
 
 That turns your dashboard into something closer to:
 
